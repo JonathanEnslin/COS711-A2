@@ -1,0 +1,826 @@
+{
+    "params": [
+        {
+            "epochs": 200,
+            "batch_size": 128,
+            "optimizers": [
+                {
+                    "name": "SGD",
+                    "lr": 0.06441136944060191,
+                    "momentum": 0.45156671293855977,
+                    "nesterov": false,
+                    "weight_decay": 0.001
+                },
+                {
+                    "name": "Adam",
+                    "lr": 0.00642433894815448,
+                    "beta1": 0.9,
+                    "beta2": 0.999,
+                    "weight_decay": 0.0005
+                }
+            ],
+            "hl_sizes": [
+                256
+            ],
+            "use_bn": false,
+            "dropout_rate": 0.0
+        },
+        {
+            "epochs": 200,
+            "batch_size": 64,
+            "optimizers": [
+                {
+                    "name": "SGD",
+                    "lr": 0.0505,
+                    "momentum": 0.495,
+                    "nesterov": true,
+                    "weight_decay": 0.0005
+                },
+                {
+                    "name": "Adam",
+                    "lr": 0.0505,
+                    "beta1": 0.9,
+                    "beta2": 0.999,
+                    "weight_decay": 0.0005
+                }
+            ],
+            "hl_sizes": [
+                16,
+                16
+            ],
+            "use_bn": true,
+            "dropout_rate": 0.0
+        },
+        {
+            "epochs": 200,
+            "batch_size": 64,
+            "optimizers": [
+                {
+                    "name": "Adam",
+                    "lr": 0.09370776765167586,
+                    "beta1": 0.9,
+                    "beta2": 0.999,
+                    "weight_decay": 0.01
+                }
+            ],
+            "hl_sizes": [
+                256,
+                256,
+                256,
+                256
+            ],
+            "use_bn": false,
+            "dropout_rate": 0.0
+        },
+        {
+            "epochs": 200,
+            "batch_size": 64,
+            "optimizers": [
+                {
+                    "name": "SGD",
+                    "lr": 0.06994111016395431,
+                    "momentum": 0.5138510081188159,
+                    "nesterov": false,
+                    "weight_decay": 0.01
+                },
+                {
+                    "name": "Adam",
+                    "lr": 0.031252847017263975,
+                    "beta1": 0.9,
+                    "beta2": 0.999,
+                    "weight_decay": 0.0001
+                }
+            ],
+            "hl_sizes": [
+                128,
+                128,
+                128
+            ],
+            "use_bn": false,
+            "dropout_rate": 0.0
+        },
+        {
+            "epochs": 200,
+            "batch_size": 64,
+            "optimizers": [
+                {
+                    "name": "Adam",
+                    "lr": 0.04979992168204215,
+                    "beta1": 0.9,
+                    "beta2": 0.999,
+                    "weight_decay": 0.0001
+                }
+            ],
+            "hl_sizes": [
+                16,
+                16
+            ],
+            "use_bn": true,
+            "dropout_rate": 0.0
+        },
+        {
+            "epochs": 200,
+            "batch_size": 128,
+            "optimizers": [
+                {
+                    "name": "SGD",
+                    "lr": 0.03138324392834765,
+                    "momentum": 0.3918138407247085,
+                    "nesterov": false,
+                    "weight_decay": 0.01
+                },
+                {
+                    "name": "Adam",
+                    "lr": 0.07786429250899672,
+                    "beta1": 0.9,
+                    "beta2": 0.999,
+                    "weight_decay": 0.0001
+                }
+            ],
+            "hl_sizes": [
+                256,
+                256,
+                256,
+                256
+            ],
+            "use_bn": false,
+            "dropout_rate": 0.0
+        },
+        {
+            "epochs": 200,
+            "batch_size": 128,
+            "optimizers": [
+                {
+                    "name": "SGD",
+                    "lr": 0.004452173241761989,
+                    "momentum": 0.8047451973102852,
+                    "nesterov": false,
+                    "weight_decay": 0.001
+                },
+                {
+                    "name": "Adam",
+                    "lr": 0.04138969583427658,
+                    "beta1": 0.9,
+                    "beta2": 0.999,
+                    "weight_decay": 0.001
+                }
+            ],
+            "hl_sizes": [
+                256,
+                256,
+                256,
+                256
+            ],
+            "use_bn": false,
+            "dropout_rate": 0.0
+        },
+        {
+            "epochs": 200,
+            "batch_size": 64,
+            "optimizers": [
+                {
+                    "name": "SGD",
+                    "lr": 0.03748243659237156,
+                    "momentum": 0.8725687686507924,
+                    "nesterov": false,
+                    "weight_decay": 0.0005
+                },
+                {
+                    "name": "Adam",
+                    "lr": 0.017734021535130907,
+                    "beta1": 0.9,
+                    "beta2": 0.999,
+                    "weight_decay": 0.01
+                }
+            ],
+            "hl_sizes": [
+                256,
+                256,
+                256,
+                256
+            ],
+            "use_bn": false,
+            "dropout_rate": 0.0
+        },
+        {
+            "epochs": 200,
+            "batch_size": 64,
+            "optimizers": [
+                {
+                    "name": "SGD",
+                    "lr": 0.0600608461292293,
+                    "momentum": 0.59319614758816,
+                    "nesterov": false,
+                    "weight_decay": 0.0005
+                },
+                {
+                    "name": "Adam",
+                    "lr": 0.0745599984932403,
+                    "beta1": 0.9,
+                    "beta2": 0.999,
+                    "weight_decay": 0.0005
+                }
+            ],
+            "hl_sizes": [
+                128,
+                128,
+                128
+            ],
+            "use_bn": true,
+            "dropout_rate": 0.0
+        },
+        {
+            "epochs": 200,
+            "batch_size": 128,
+            "optimizers": [
+                {
+                    "name": "Adam",
+                    "lr": 0.03840158579782139,
+                    "beta1": 0.9,
+                    "beta2": 0.999,
+                    "weight_decay": 0.001
+                }
+            ],
+            "hl_sizes": [
+                128,
+                128,
+                128
+            ],
+            "use_bn": true,
+            "dropout_rate": 0.0
+        },
+        {
+            "epochs": 200,
+            "batch_size": 64,
+            "optimizers": [
+                {
+                    "name": "SGD",
+                    "lr": 0.023530589011493765,
+                    "momentum": 0.3120729234841937,
+                    "nesterov": false,
+                    "weight_decay": 0.01
+                },
+                {
+                    "name": "Adam",
+                    "lr": 0.06576058108326381,
+                    "beta1": 0.9,
+                    "beta2": 0.999,
+                    "weight_decay": 0.0005
+                }
+            ],
+            "hl_sizes": [
+                256,
+                256,
+                256,
+                256
+            ],
+            "use_bn": true,
+            "dropout_rate": 0.0
+        },
+        {
+            "epochs": 200,
+            "batch_size": 64,
+            "optimizers": [
+                {
+                    "name": "SGD",
+                    "lr": 0.08030278030007765,
+                    "momentum": 0.3162847965692306,
+                    "nesterov": true,
+                    "weight_decay": 0.01
+                },
+                {
+                    "name": "Adam",
+                    "lr": 0.008763734081882232,
+                    "beta1": 0.9,
+                    "beta2": 0.999,
+                    "weight_decay": 0.01
+                }
+            ],
+            "hl_sizes": [
+                128,
+                128,
+                128,
+                128
+            ],
+            "use_bn": false,
+            "dropout_rate": 0.0
+        },
+        {
+            "epochs": 200,
+            "batch_size": 128,
+            "optimizers": [
+                {
+                    "name": "SGD",
+                    "lr": 0.08338060347169049,
+                    "momentum": 0.3405462412349086,
+                    "nesterov": true,
+                    "weight_decay": 0.01
+                }
+            ],
+            "hl_sizes": [
+                256
+            ],
+            "use_bn": false,
+            "dropout_rate": 0.0
+        },
+        {
+            "epochs": 200,
+            "batch_size": 128,
+            "optimizers": [
+                {
+                    "name": "SGD",
+                    "lr": 0.016422506866107498,
+                    "momentum": 0.6651630416621139,
+                    "nesterov": true,
+                    "weight_decay": 0.0005
+                }
+            ],
+            "hl_sizes": [
+                128,
+                128,
+                128
+            ],
+            "use_bn": true,
+            "dropout_rate": 0.0
+        },
+        {
+            "epochs": 200,
+            "batch_size": 128,
+            "optimizers": [
+                {
+                    "name": "SGD",
+                    "lr": 0.09672586596293895,
+                    "momentum": 0.18722535751897595,
+                    "nesterov": false,
+                    "weight_decay": 0.0005
+                },
+                {
+                    "name": "Adam",
+                    "lr": 0.013387979673275173,
+                    "beta1": 0.9,
+                    "beta2": 0.999,
+                    "weight_decay": 0.0005
+                }
+            ],
+            "hl_sizes": [
+                16,
+                16
+            ],
+            "use_bn": false,
+            "dropout_rate": 0.0
+        },
+        {
+            "epochs": 200,
+            "batch_size": 128,
+            "optimizers": [
+                {
+                    "name": "SGD",
+                    "lr": 0.08108605030818623,
+                    "momentum": 0.8475456929549539,
+                    "nesterov": false,
+                    "weight_decay": 0.01
+                },
+                {
+                    "name": "Adam",
+                    "lr": 0.09077288671599851,
+                    "beta1": 0.9,
+                    "beta2": 0.999,
+                    "weight_decay": 0.0001
+                }
+            ],
+            "hl_sizes": [
+                256,
+                256,
+                256,
+                256
+            ],
+            "use_bn": false,
+            "dropout_rate": 0.0
+        },
+        {
+            "epochs": 200,
+            "batch_size": 128,
+            "optimizers": [
+                {
+                    "name": "SGD",
+                    "lr": 0.03295105227639085,
+                    "momentum": 0.6934211646394071,
+                    "nesterov": true,
+                    "weight_decay": 0.0005
+                }
+            ],
+            "hl_sizes": [
+                256
+            ],
+            "use_bn": false,
+            "dropout_rate": 0.0
+        },
+        {
+            "epochs": 200,
+            "batch_size": 128,
+            "optimizers": [
+                {
+                    "name": "SGD",
+                    "lr": 0.016422506866107498,
+                    "momentum": 0.6651630416621139,
+                    "nesterov": true,
+                    "weight_decay": 0.0005
+                }
+            ],
+            "hl_sizes": [
+                256,
+                256,
+                256,
+                256
+            ],
+            "use_bn": true,
+            "dropout_rate": 0.0
+        },
+        {
+            "epochs": 200,
+            "batch_size": 128,
+            "optimizers": [
+                {
+                    "name": "SGD",
+                    "lr": 0.0011050558113305901,
+                    "momentum": 0.5003262741992467,
+                    "nesterov": true,
+                    "weight_decay": 0.0005
+                }
+            ],
+            "hl_sizes": [
+                64,
+                64
+            ],
+            "use_bn": true,
+            "dropout_rate": 0.0
+        },
+        {
+            "epochs": 200,
+            "batch_size": 128,
+            "optimizers": [
+                {
+                    "name": "Adam",
+                    "lr": 0.04685637367535556,
+                    "beta1": 0.9,
+                    "beta2": 0.999,
+                    "weight_decay": 0.001
+                }
+            ],
+            "hl_sizes": [
+                256,
+                256,
+                256,
+                256
+            ],
+            "use_bn": true,
+            "dropout_rate": 0.0
+        },
+        {
+            "epochs": 200,
+            "batch_size": 128,
+            "optimizers": [
+                {
+                    "name": "Adam",
+                    "lr": 0.06675319557517354,
+                    "beta1": 0.9,
+                    "beta2": 0.999,
+                    "weight_decay": 0.0005
+                }
+            ],
+            "hl_sizes": [
+                256,
+                256,
+                256,
+                256
+            ],
+            "use_bn": false,
+            "dropout_rate": 0.0
+        },
+        {
+            "epochs": 200,
+            "batch_size": 64,
+            "optimizers": [
+                {
+                    "name": "SGD",
+                    "lr": 0.0482427684161965,
+                    "momentum": 0.48736716379361267,
+                    "nesterov": false,
+                    "weight_decay": 0.01
+                },
+                {
+                    "name": "Adam",
+                    "lr": 0.03771222375439908,
+                    "beta1": 0.9,
+                    "beta2": 0.999,
+                    "weight_decay": 0.0001
+                }
+            ],
+            "hl_sizes": [
+                64,
+                64
+            ],
+            "use_bn": true,
+            "dropout_rate": 0.0
+        },
+        {
+            "epochs": 200,
+            "batch_size": 64,
+            "optimizers": [
+                {
+                    "name": "SGD",
+                    "lr": 0.07616804328540186,
+                    "momentum": 0.17495408620279948,
+                    "nesterov": false,
+                    "weight_decay": 0.0001
+                },
+                {
+                    "name": "Adam",
+                    "lr": 0.013600491482389634,
+                    "beta1": 0.9,
+                    "beta2": 0.999,
+                    "weight_decay": 0.01
+                }
+            ],
+            "hl_sizes": [
+                256
+            ],
+            "use_bn": true,
+            "dropout_rate": 0.0
+        },
+        {
+            "epochs": 200,
+            "batch_size": 128,
+            "optimizers": [
+                {
+                    "name": "SGD",
+                    "lr": 0.03944859060196284,
+                    "momentum": 0.19842303438968958,
+                    "nesterov": true,
+                    "weight_decay": 0.01
+                },
+                {
+                    "name": "Adam",
+                    "lr": 0.07344472658564258,
+                    "beta1": 0.9,
+                    "beta2": 0.999,
+                    "weight_decay": 0.01
+                }
+            ],
+            "hl_sizes": [
+                256,
+                256,
+                256,
+                256
+            ],
+            "use_bn": false,
+            "dropout_rate": 0.0
+        },
+        {
+            "epochs": 200,
+            "batch_size": 64,
+            "optimizers": [
+                {
+                    "name": "SGD",
+                    "lr": 0.016422506866107498,
+                    "momentum": 0.6651630416621139,
+                    "nesterov": true,
+                    "weight_decay": 0.0005
+                }
+            ],
+            "hl_sizes": [
+                256,
+                256,
+                256,
+                256
+            ],
+            "use_bn": true,
+            "dropout_rate": 0.0
+        },
+        {
+            "epochs": 200,
+            "batch_size": 64,
+            "optimizers": [
+                {
+                    "name": "SGD",
+                    "lr": 0.014362431732063856,
+                    "momentum": 0.2804236448999021,
+                    "nesterov": true,
+                    "weight_decay": 0.0001
+                },
+                {
+                    "name": "Adam",
+                    "lr": 0.056697353835781034,
+                    "beta1": 0.9,
+                    "beta2": 0.999,
+                    "weight_decay": 0.0005
+                }
+            ],
+            "hl_sizes": [
+                128,
+                128,
+                128
+            ],
+            "use_bn": true,
+            "dropout_rate": 0.0
+        },
+        {
+            "epochs": 200,
+            "batch_size": 64,
+            "optimizers": [
+                {
+                    "name": "SGD",
+                    "lr": 0.016422506866107498,
+                    "momentum": 0.6651630416621139,
+                    "nesterov": true,
+                    "weight_decay": 0.0005
+                }
+            ],
+            "hl_sizes": [
+                256,
+                256,
+                256,
+                256
+            ],
+            "use_bn": false,
+            "dropout_rate": 0.0
+        },
+        {
+            "epochs": 200,
+            "batch_size": 128,
+            "optimizers": [
+                {
+                    "name": "SGD",
+                    "lr": 0.006958534950894244,
+                    "momentum": 0.8436634669036979,
+                    "nesterov": true,
+                    "weight_decay": 0.0005
+                }
+            ],
+            "hl_sizes": [
+                16,
+                16
+            ],
+            "use_bn": false,
+            "dropout_rate": 0.0
+        },
+        {
+            "epochs": 200,
+            "batch_size": 64,
+            "optimizers": [
+                {
+                    "name": "SGD",
+                    "lr": 0.0604766456171019,
+                    "momentum": 0.6824668947294645,
+                    "nesterov": false,
+                    "weight_decay": 0.01
+                },
+                {
+                    "name": "Adam",
+                    "lr": 0.05701531175393271,
+                    "beta1": 0.9,
+                    "beta2": 0.999,
+                    "weight_decay": 0.001
+                }
+            ],
+            "hl_sizes": [
+                256,
+                256,
+                256,
+                256
+            ],
+            "use_bn": false,
+            "dropout_rate": 0.0
+        },
+        {
+            "epochs": 200,
+            "batch_size": 64,
+            "optimizers": [
+                {
+                    "name": "SGD",
+                    "lr": 0.016422506866107498,
+                    "momentum": 0.6651630416621139,
+                    "nesterov": true,
+                    "weight_decay": 0.0005
+                }
+            ],
+            "hl_sizes": [
+                128,
+                128,
+                128,
+                128
+            ],
+            "use_bn": false,
+            "dropout_rate": 0.0
+        },
+        {
+            "epochs": 200,
+            "batch_size": 128,
+            "optimizers": [
+                {
+                    "name": "SGD",
+                    "lr": 0.09114802087886947,
+                    "momentum": 0.7817198531503897,
+                    "nesterov": false,
+                    "weight_decay": 0.001
+                },
+                {
+                    "name": "Adam",
+                    "lr": 0.05319881868142582,
+                    "beta1": 0.9,
+                    "beta2": 0.999,
+                    "weight_decay": 0.0001
+                }
+            ],
+            "hl_sizes": [
+                256
+            ],
+            "use_bn": false,
+            "dropout_rate": 0.0
+        },
+        {
+            "epochs": 200,
+            "batch_size": 64,
+            "optimizers": [
+                {
+                    "name": "SGD",
+                    "lr": 0.009675953685935258,
+                    "momentum": 0.5048529849686897,
+                    "nesterov": true,
+                    "weight_decay": 0.0005
+                },
+                {
+                    "name": "Adam",
+                    "lr": 0.0019870592744689426,
+                    "beta1": 0.9,
+                    "beta2": 0.999,
+                    "weight_decay": 0.0001
+                }
+            ],
+            "hl_sizes": [
+                256,
+                256,
+                256,
+                256
+            ],
+            "use_bn": true,
+            "dropout_rate": 0.0
+        },
+        {
+            "epochs": 200,
+            "batch_size": 128,
+            "optimizers": [
+                {
+                    "name": "SGD",
+                    "lr": 0.016422506866107498,
+                    "momentum": 0.6651630416621139,
+                    "nesterov": true,
+                    "weight_decay": 0.0005
+                }
+            ],
+            "hl_sizes": [
+                256,
+                256,
+                256,
+                256
+            ],
+            "use_bn": false,
+            "dropout_rate": 0.0
+        }
+    ],
+    "fs": [
+        75.84158415841584,
+        74.7007438839122,
+        68.11881188118812,
+        76.76457645764576,
+        74.15841584158416,
+        73.26732673267327,
+        76.88283828382839,
+        61.386138613861384,
+        75.54455445544555,
+        73.06930693069307,
+        74.85148514851485,
+        74.05940594059406,
+        71.2871287128713,
+        81.20556341348421,
+        76.8035517837498,
+        75.64356435643563,
+        74.95049504950495,
+        84.61527581329561,
+        71.88118811881188,
+        72.67326732673267,
+        73.64332861857615,
+        78.1461181832469,
+        70.89108910891089,
+        62.17821782178218,
+        83.46487505893447,
+        75.14851485148515,
+        78.23204463303473,
+        68.51485148514851,
+        70.6930693069307,
+        79.3030803080308,
+        79.3012729844413,
+        84.37945937450888,
+        77.23927392739274
+    ]
+}
