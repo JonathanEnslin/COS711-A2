@@ -146,7 +146,7 @@ def main():
     almonds_train, almonds_test, train_loader, test_loader = get_data_objects(sub_dir='basic', batch_size=batch_size)
     
     # Initialize model, loss function, and optimizer
-    model = SimpleNet(almonds_train.num_features(), almonds_train.num_classes(), hl_sizes=[256, 256, 256, 256], use_bn=True, dropout_rate=0.0)
+    model = SimpleNet(almonds_train.num_features(), almonds_train.num_classes(), hl_sizes=[64, 64, 64, 64], use_bn=True, dropout_rate=0.0)
     model = model.to(device)
     print(f'Number of parameters in the model: {model.get_num_params()}')
     

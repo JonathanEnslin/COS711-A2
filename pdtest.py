@@ -1,18 +1,30 @@
 import pandas as pd
+import numpy as np
 
-# Example list of lists representing the accuracies of different runs
-runs = [
-    [0.8, 0.82, 0.85],       # Run1
-    [0.75, 0.78],            # Run2
-    [0.82, 0.83, 0.86, 0.88],# Run3
-    [0.79, 0.81],            # Run4
-    [0.76],                  # Run5
-    []
-]
+# Sample DataFrame (replace this with your actual DataFrame)
+df = pd.DataFrame({
+    'A': [1, 2, 3, np.nan, np.nan],
+    # 'B': [np.nan, 4, 5, 6, np.nan],
+    # 'C': [7, np.nan, np.nan, 8, 9],
+    'D': [np.nan, np.nan, np.nan, np.nan, np.nan]  # All NaNs column
+})
 
-# Convert to DataFrame, padding with NaN to equalize the lengths
-df = pd.DataFrame(runs).T  # Transpose so that each list becomes a column
-df.columns = [f'Run{i+1}' for i in range(len(runs))]  # Rename columns to Run1, Run2, ..., Run5
+# Print the original DataFrame
+print("Original DataFrame:\n", df)
 
-# Display the DataFrame
-print(df)
+# Find the last non-null value in each column, ignoring columns that are all NaN
+last_non_null_values = df.apply(lambda col: col.dropna().iloc[-1] if col.dropna().size > 0 else np.nan)
+
+# Filter out NaN values in case any column is entirely NaN
+last_non_null_values = last_non_null_values.dropna()
+
+# Print intermediate result: last non-null values in each column
+print("\nLast non-null values in each column (excluding all-NaN columns):\n", last_non_null_values)
+
+# Calculate the mean and standard deviation
+mean_value = last_non_null_values.mean()
+std_value = last_non_null_values.std()
+
+# Print the final results
+print("\nMean of final non-null elements:", mean_value)
+print("Standard deviation of final non-null elements:", std_value)
