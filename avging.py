@@ -153,8 +153,9 @@ def initialize_model(input_size, num_classes, optimizer_configs, hl_sizes, use_b
 def run_k_fold_cv(almonds_train, num_epochs, batch_size, optimizer_configs, hl_sizes, use_bn, dropout_rate, k_folds, device, patience=15):
     kfold = KFold(n_splits=k_folds, shuffle=True)
     fold_accuracies = []
-    
+    import time
     for fold, (train_ids, val_ids) in enumerate(kfold.split(almonds_train)):
+        start_time = time.time()
         train_subset = Subset(almonds_train, train_ids)
         val_subset = Subset(almonds_train, val_ids)
         
@@ -179,6 +180,8 @@ def run_k_fold_cv(almonds_train, num_epochs, batch_size, optimizer_configs, hl_s
             if epochs_no_improve >= patience:
                 break
         
+        # print the time taken for each fold
+        print(f'Time taken for fold {fold+1}: {time.time()-start_time:.2f} seconds')
         fold_accuracies.append(best_val_accuracy)
         if best_val_accuracy < 75.0:
             break  # Early stopping if validation accuracy is less than 75.0
@@ -233,7 +236,7 @@ def main():
 
     
     # Run the PyHopper search
-    search.run(objective, direction="maximize", runtime="10m", n_jobs=2)
+    search.run(objective, direction="maximize", runtime="10m", n_jobs=1)
 
     print(type(search.history))
     print(list(search.history))
